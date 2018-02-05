@@ -1,5 +1,5 @@
 
-public class Vektor implements IVektor{
+public class Vektor implements IVektor, Comparable{
 	
 	private double x=0;
 	private double y=0;
@@ -51,5 +51,19 @@ public class Vektor implements IVektor{
 		}
 	}
 
+	public double Length(){
+		double r = Math.sqrt(Math.pow(x, 2)+Math.pow(y, 2));
+		return r;
+	}
+
+	@Override
+	public int compareTo(Object arg0) {
+		if (arg0 instanceof IVektor);
+		
+		return 0;
+	}
+
 	
 }
+
+
